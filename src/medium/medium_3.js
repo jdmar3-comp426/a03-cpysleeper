@@ -76,9 +76,9 @@ export function searchName(car_data, searchTerm) {
                 result[z] = result[j];
                 result[j] = helper2;
 
-                const helper2 = count[z];
+                const helper3 = count[z];
                 count[z] = count[j];
-                count[j] = helper2;
+                count[j] = helper3;
 
             }
         }
