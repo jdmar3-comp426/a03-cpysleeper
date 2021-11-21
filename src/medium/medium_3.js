@@ -107,5 +107,5 @@ export function searchByYear(car_data, years) {
         }
     }
 
-    return result.sort(function(a, b){return b.year-a.year});
+    return result;
 }
