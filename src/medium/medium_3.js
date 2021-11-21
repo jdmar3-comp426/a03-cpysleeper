@@ -21,7 +21,7 @@ export function searchHighPower(car_data, minHorsepower, minTorque) {
     const result = [];
     for(let i=0; i<car_data[i];i++){
         if(car_data[i].horsepower>minHorsepower && car_data[i].torque>minTorque){
-            result.push(car_data[i])
+            result.push(car_data[i]);
         }
     }
     return result.sort(function(a, b){return b.horsepower-a.horsepower});
@@ -107,5 +107,5 @@ export function searchByYear(car_data, years) {
         }
     }
 
-    return result;
+    return result.sort(function(a, b){return b.year-a.year});
 }
