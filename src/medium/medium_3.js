@@ -62,9 +62,9 @@ export function searchName(car_data, searchTerm) {
     const count = [];
     const helper = searchTerm.toUpperCase();
     for(let i=0; i < car_data.length; i++){
-        if (car_data[i].id.toUpperCase().includes(helper1)){
+        if (car_data[i].id.toUpperCase().includes(helper)){
             result.push(car_data[i]);
-            count.push(car_data[i].id.toUpperCase().indexOf(helper1));
+            count.push(car_data[i].id.toUpperCase().indexOf(helper));
         }
     }
 
