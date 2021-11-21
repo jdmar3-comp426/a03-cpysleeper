@@ -157,10 +157,10 @@ export const filter = (arr, test) => {
     const result = {pass:[], fail:[]};
     for(let i=0; i<arr.length; i++){
         if(test(arr[i])){
-            result[pass].push(arr[i]);
+            result.pass.push(arr[i]);
         }
         else{
-            result[fail].push(arr[i]);
+            result.fail.push(arr[i]);
         }
     }
     return result;
