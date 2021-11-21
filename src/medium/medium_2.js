@@ -31,11 +31,11 @@ export function get_mpg(array) {
         var count_h = 0;
         var count_c = 0;
         for(let i=0; i<length_a;i++){
-            count_h = count_h+array[i][highway_mpg];
-            count_c = count_c+array[i][city_mpg];
+            count_h = count_h+array[i].highway_mpg;
+            count_c = count_c+array[i].city_mpg;
         }
-        helper.city= count_c/length_a;
-        helper.highway= count_h/length_a;
+        helper[city]= count_c/length_a;
+        helper[highway]= count_h/length_a;
         return helper;
 }
 

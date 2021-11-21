@@ -72,13 +72,13 @@ export function searchName(car_data, searchTerm) {
     for (let j=0; j<result.length;j++){
         for (let z=0; z<result.length; z++){
             if(index[j]>index[z]){
-                const counter = result[z];
+                const helper2 = result[z];
                 result[z] = result[j];
-                result[j] = counter;
+                result[j] = helper2;
 
-                const counter = count[z];
+                const helper2 = count[z];
                 count[z] = count[j];
-                count[j] = counter;
+                count[j] = helper2;
 
             }
         }
