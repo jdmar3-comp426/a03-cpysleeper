@@ -20,7 +20,7 @@ see under the methods section
  * @param {allCarStats.ratioHybrids} ratio of cars that are hybrids
  */
 export const allCarStats = {
-    avgMpg: avg => {
+    avgMpg: avg = () => {
         const helper= {};
         const length_a  = mpg_data.length;
         var count_h = 0;
