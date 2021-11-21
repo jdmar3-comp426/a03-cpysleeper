@@ -20,9 +20,9 @@ see under the methods section
  * @param {allCarStats.ratioHybrids} ratio of cars that are hybrids
  */
 export const allCarStats = {
-    avgMpg: get_mpg(mpg.data),
-    allYearStats: get_year_sta(array),
-    ratioHybrids: get_hybrid,
+    avgMpg: get_mpg(mpg_data),
+    allYearStats: get_year_sta(mpg_data),
+    ratioHybrids: get_hybrid(mpg_data),
 };
 
 export function get_mpg(array) {
@@ -116,7 +116,7 @@ export function get_hybrid(array) {
  */
 export const moreStats = {
     makerHybrids: make_hyb(mpg_data),
-    avgMpgByYearAndHybrid: undefined
+    avgMpgByYearAndHybrid: avg_hbr(mpg_data),
 };
 
 export function make_hyb(array) {
