@@ -24,7 +24,9 @@ export function searchHighPower(car_data, minHorsepower, minTorque) {
             result.push(car_data[i])
         }
     }
-    result.sort(function(a, b){return b.horsepower-a.horsepower});
+    return result.sort(function(a, b){return b.horsepower-a.horsepower});
+
+
 }
 
 
@@ -45,7 +47,7 @@ export function searchMpg(car_data, minCity, minHighway) {
             result.push(car_data[i])
         }
     }
-    result.sort(function(a, b){return b.highway_mpg-a.highway_mpg});
+    return result.sort(function(a, b){return b.highway_mpg-a.highway_mpg});
 }
 
 
@@ -105,5 +107,5 @@ export function searchByYear(car_data, years) {
         }
     }
 
-    result.sort(function(a, b){return b.year-a.year});
+    return result.sort(function(a, b){return b.year-a.year});
 }
