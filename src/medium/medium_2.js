@@ -121,7 +121,7 @@ export const moreStats = {
 
 export function make_hyb(array) {
     let set1 = new Set();
-    for(let i=0; i < array.length(); i++){
+    for(let i=0; i < array.length; i++){
         set1.add(array[i].make)
     }
 
@@ -142,7 +142,7 @@ export function make_hyb(array) {
 export function avg_hbr(array) {
     const result = [];
     let set1 = new Set();
-    for(let i=0; i < array.length(); i++){
+    for(let i=0; i < array.length; i++){
         set1.add(array[i].year);
     }
     
