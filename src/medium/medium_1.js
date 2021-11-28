@@ -73,12 +73,12 @@ export function getStatistics(array) {
     let variance_a = variance(array, mean_a);
     let standard_a = Math.sqrt(variance_a);
     
-    result.length=length_a;
-    result.sum =sum_a;
-    result.mean=mean_a;
-    result.median=median_a;
-    result.variance= variance_a;
-    result.standard_deviation = standard_a;
+    result["length"]=length_a;
+    result["sum"] =sum_a;
+    result["mean"]=mean_a;
+    result["median"]=median_a;
+    result["variance"]= variance_a;
+    result["standard_deviation"] = standard_a;
 
     return result;
 
