@@ -42,7 +42,7 @@ export function get_mpg(array) {
 export function get_year_sta(array) {
     const all_years = [];
     for(let i=0; i<array.length;i++){
-        all_years[i]=array[i][year];
+        all_years[i]=array[i].year;
     }
     return getStatistics(all_years);
 } 
@@ -50,7 +50,7 @@ export function get_year_sta(array) {
 export function get_hybrid(array) {
     var count_hybrid=0;
     for(let i=0; i<array.length;i++){
-        if(array[i][hybrid]==true){
+        if(array[i].hybrid==true){
             count_hybrid= count_hybrid+1;
         }
     }
