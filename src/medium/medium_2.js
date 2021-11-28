@@ -129,7 +129,7 @@ export function make_hyb(array) {
     for(let j=0; j < set1.size;j++){
         const helper2 = [];
         for(let z=0; z<array.length; z++){
-            if(array[z].make == set1[i]){
+            if(array[z].make == set1[j]){
                  helper2.push(array[z].hybrids)
             }
             helper.push({make:set1[j],hybrids:helper2})
