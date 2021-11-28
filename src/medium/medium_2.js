@@ -160,10 +160,20 @@ export function avg_hbr(array) {
             }
         }
         
-        const avg = (array) => array.reduce((a, b) => a + b) / array.length;
-        const avg1 = avg(helper1);
-        const avg2 = avg(helper2);
+        
+        const avg1 = getavg(helper1);
+        const avg2 = getavg(helper2);
         result[set1] = {"hybrid":avg1, "notHybrid":avg2};
     }
     return result;
+}
+
+export function getavg(array){
+    var total = 0;
+    for(var i = 0; i < grades.length; i++) {
+        total += array[i];
+    }
+    var avg = total / array.length;
+    return avg;
+
 }
