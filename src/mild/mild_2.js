@@ -99,4 +99,5 @@ export function removeKeys(object, keyList) {
    for(let i=0; i<keyList.length;i++){
       delete helper[keyList[i]];
    }
+   return helper;
 }
