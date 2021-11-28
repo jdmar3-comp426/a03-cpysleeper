@@ -62,10 +62,10 @@ export function getMedian(array) {
  }
  */
 export function getStatistics(array) {
-    if(array.length ===0) throw new Error("No inputs");
+    
     result = {};
-    let max_a= Math.max.apply(null, array);
-    let min_a= Math.min.apply(null, array);
+    let max_a= Math.max(...array);
+    let min_a= Math.min(...array);
     let length_a= array.length;
     let sum_a = getSum(array);
     let mean_a = sum_a/length_a;
