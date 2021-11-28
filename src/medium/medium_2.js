@@ -150,7 +150,7 @@ export function avg_hbr(array) {
         const helper1 = [];
         const helper2 = [];
         for(let z=0; z<array.length;z++){
-            if(set1[i]==array[z].year){
+            if(set1[j]==array[z].year){
                 if(array[z].hybrid==true){
                     helper1.push(array[z]);
                 }
