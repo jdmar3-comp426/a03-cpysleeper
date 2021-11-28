@@ -63,7 +63,7 @@ export function getMedian(array) {
  */
 export function getStatistics(array) {
     if(array.length ===0) throw new Error("No inputs");
-
+    result = [];
     let max_a= Math.max.apply(null, array);
     let min_a= Math.min.apply(null, array);
     let length_a= array.length;
@@ -73,13 +73,14 @@ export function getStatistics(array) {
     let variance_a = variance(array, mean_a);
     let standard_a = Math.sqrt(variance_a);
     console.log("length: "+length_a+", \n");
-    console.log("sum: "+sum_a+", \n");
-    console.log("mean: "+mean_a+", \n");
-    console.log("median: "+median_a+", \n");
-    console.log("min: "+min_a+", \n");
-    console.log("max: "+max_a+", \n");
-    console.log("variance: "+variance_a+", \n");
-    console.log("standard_deviation: "+standard_a+", \n");
+    result["length"]=length_a;
+    result["sum"]=sum_a;
+    result["mean"]=mean_a;
+    result["median"]=median_a;
+    result["variance"] = variance_a;
+    result["standard_deviation"] = standard_a;
+
+    return result;
 
 }
 
