@@ -160,9 +160,10 @@ export function avg_hbr(array) {
             }
         }
         
-        const avg1 = (helper) => helper.reduce((a, b) => a + b) / helper.length;
-        
-        result[set1] = {"hybrid":avg1(helper1), "notHybrid":avg1(helper2)};
+        const avg = (array) => array.reduce((a, b) => a + b) / array.length;
+        const avg1 = avg(helper1);
+        const avg2 = avg(helper2);
+        result[set1] = {"hybrid":avg1, "notHybrid":avg2};
     }
     return result;
 }
