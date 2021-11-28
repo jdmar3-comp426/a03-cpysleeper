@@ -120,11 +120,11 @@ export const moreStats = {
 };
 
 export function make_hyb(array) {
-    const set1 = [];
+    const array1 = [];
     for(let i=0; i < array.length; i++){
-        set1.push(array[i].make);
+        array1.push(array[i].make);
     }
-    set1 = [... new Set(set1)];
+    const set1 = [... new Set(array1)];
 
     const helper = [];
     for(let j=0; j < set1.length;j++){
