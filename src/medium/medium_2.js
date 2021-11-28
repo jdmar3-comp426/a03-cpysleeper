@@ -127,7 +127,7 @@ export function make_hyb(array) {
 
     const helper = [];
     for(let j=0; j < set1.size;j++){
-        var helper4 = [];
+        let helper4 = [];
         for(let z=0; z<array.length; z++){
             if(array[z].make == set1[j]){
                  helper4.push(array[z].hybrids)
@@ -147,8 +147,8 @@ export function avg_hbr(array) {
     }
     
     for(let j=0; j<set1.size;j++){
-        const helper1 = [];
-        const helper2 = [];
+        let helper1 = [];
+        let helper2 = [];
         for(let z=0; z<array.length;z++){
             if(set1[j]==array[z].year){
                 if(array[z].hybrid==true){
