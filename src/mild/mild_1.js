@@ -29,7 +29,7 @@ export function getIncreasingArray(startNumber, endNumber) {
     for (let i = 0; i < diff+1; i++) {
         array[i]=startNumber+i;
     }
-    return (JSON.stringify(array));
+    return array;
 }
 
 /**
@@ -40,9 +40,12 @@ export function getIncreasingArray(startNumber, endNumber) {
  * and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
  */
 export function maxAndMin(numbers) {
-    let max = Math.max.apply(null,numbers);
-    let min = Math.min.apply(null,numbers);
-    return `{min: ${min}, max: ${max}}`;
+    const result = {};
+    let max = Math.max(numbers);
+    let min = Math.min(numbers);
+    result[max] = max;
+    result[min] = min;
+    return result;
 }
 
 /**
