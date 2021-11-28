@@ -54,7 +54,7 @@ export function get_hybrid(array) {
             count_hybrid= count_hybrid+1;
         }
     }
-    return count_hybrid/length_a;
+    return count_hybrid/array.length;
 }
 
 /**
