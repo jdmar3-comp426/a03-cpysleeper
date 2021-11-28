@@ -120,13 +120,14 @@ export const moreStats = {
 };
 
 export function make_hyb(array) {
-    let set1 = new Set();
+    let set1 = [];
     for(let i=0; i < array.length; i++){
         set1.add(array[i].make)
     }
+    set1 = [... new Set(set1)];
 
     const helper = [];
-    for(let j=0; j < set1.size;j++){
+    for(let j=0; j < set1.length;j++){
         let helper4 = [];
         for(let z=0; z<array.length; z++){
             if(array[z].make == set1[j]){
