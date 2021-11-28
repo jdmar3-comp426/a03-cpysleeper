@@ -130,10 +130,10 @@ export function make_hyb(array) {
         let helper4 = [];
         for(let z=0; z<array.length; z++){
             if(array[z].make == set1[j]){
-                 helper4.push(array[z].hybrids)
+                 helper4.push(array[z].id);
             }
-            helper.push({"make":set1[j],"hybrids":helper4})
         }
+        helper.push({"make":set1[j],"hybrids":helper4});
 
     }
     return helper;
